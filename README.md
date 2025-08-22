@@ -4,11 +4,12 @@
 
 #### Get JWT Token
 - JWT Token expires every 30 minutes
-- Call API endpoint => baseUrl/api/Auth/login with the login object attach to request body
+- Call API endpoint => {{baseUrl}}/api/Auth/login with the login object attach to request body
 ```
   "email": "EMAIL",
   "password": "PASSWORD"
 ```
+<img width="830" height="314" alt="image" src="https://github.com/user-attachments/assets/1acd2f00-0e77-4d48-8286-0ee407fdf557" />
 
 Result:
 ![image](https://github.com/user-attachments/assets/614c57c8-904c-4e23-84fa-561239f47eb8)
@@ -19,15 +20,15 @@ Result:
 ### Customer
 #### Get All Customers
 - Get All Customers from SQL Accounting Database
-- Call API endpoint => baseUrl/api/Customers/GetAllCustomers
-  ![image](https://github.com/user-attachments/assets/c4e2fa2a-377e-41c6-9d59-5627627bc4eb)
+- Call API endpoint => {{baseUrl}}/api/Customers/GetAllCustomers
+  <img width="822" height="328" alt="image" src="https://github.com/user-attachments/assets/4a24ea3e-702b-4405-b5b4-c26adad9b002" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/a2060094-92e0-4491-a077-033ebe6f0edb)
 
 #### Add Customer
 - Add Customer to SQL Accounting Database
-- Call API endpoint => baseUrl/api/Customers/AddCustomer with the object attach to request body
+- Call API endpoint => {{baseUrl}}/api/Customers/AddCustomer with the object attach to request body
   ```
   {
     "code": "string",
@@ -53,14 +54,14 @@ Result:
     ]
   }
   ```
-  ![image](https://github.com/user-attachments/assets/5f45d042-bf4f-46f6-92e9-73102deae457)
+  <img width="824" height="716" alt="image" src="https://github.com/user-attachments/assets/e56fe781-5147-41c1-8a79-454a01f03112" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/685b3ce3-8efe-418e-993c-ae4edf947ed0)
 
 ### Update Customer 
 - Update Customer to SQL Accounting Database
-- Call API endpoint => baseUrl/api/Customers/UpdateCustomer/{customerCode} with the object attach to request body
+- Call API endpoint => {{baseUrl}}/api/Customers/UpdateCustomer/{customerCode} with the object attach to request body
 ```
 {
   "code": "string",
@@ -86,23 +87,23 @@ Result:
   ]
 }
 ```
-  ![image](https://github.com/user-attachments/assets/249847b5-6848-4bf7-b76c-328d9728741f)
+  <img width="1212" height="723" alt="image" src="https://github.com/user-attachments/assets/70337ead-88cb-4a8f-9718-deb1e5a09cc3" />
 
 - Result
   ![image](https://github.com/user-attachments/assets/8b737a60-5c5e-4815-a658-907f89458342)
 
 #### Get Customer By Code
 - Get Customer from SQL Accounting Database by Code
-- Call API endpoint => baseUrl/api/Customers/GetCustomerByCode/{customerCode}
-  ![image](https://github.com/user-attachments/assets/4a991d4d-7d84-4671-b3e3-fdab8f1057ed)
+- Call API endpoint => {{baseUrl}}/api/Customers/GetCustomerByCode/{customerCode}
+  <img width="928" height="375" alt="image" src="https://github.com/user-attachments/assets/43265d42-7ef6-4aee-b061-fe50cbf3e508" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/91d722d7-f742-4722-a4f7-973976fd19d4)
 
 #### Delete Customer
 - Delete Customer from SQL Accounting Database
-- Call API endpoint => baseUrl/api/Customers/DeleteCustomer/{customerCode}
-  ![image](https://github.com/user-attachments/assets/dd60d8ab-29ac-4682-bac5-5ec5318f713b)
+- Call API endpoint => {{baseUrl}}/api/Customers/DeleteCustomer/{customerCode}
+  <img width="864" height="336" alt="image" src="https://github.com/user-attachments/assets/4fbca911-8ec0-4841-a148-6b4f65034a72" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/0e5d055b-eec7-4e9c-a906-c1b0e50e5430)
@@ -110,15 +111,15 @@ Result:
 ### Item
 #### Get All Items
 - Get All Items from SQL Accounting Database
-- Call API endpoint => baseUrl/api/Items/GetAllItems
-  ![image](https://github.com/user-attachments/assets/cef4cb41-8b10-48c3-b67a-96b70e2c9617)
+- Call API endpoint => {{baseUrl}}/api/Items/GetAllItems
+  <img width="857" height="364" alt="image" src="https://github.com/user-attachments/assets/ca018e0d-3474-4357-a17f-e2c55254a9c5" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/d023fc98-cd34-4711-b6eb-1228c5508431)
 
 #### Add Item
 - Add Item to SQL Accounting Database
-- Call API endpoint => baseUrl/api/Items/CreateItem with the object attach to request body
+- Call API endpoint => {{baseUrl}}/api/Items/CreateItem with the object attach to request body
 - Make sure the StockGroup already existed in SQL Accounting
 ```
 {
@@ -138,14 +139,14 @@ Result:
   ]
 }
 ```
-  ![image](https://github.com/user-attachments/assets/f0cb057b-f971-4d06-a38d-51c519905af5)
+  <img width="1048" height="558" alt="image" src="https://github.com/user-attachments/assets/9a82b795-70d4-4a04-bc5a-a431570f09a5" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/4aa8ba7b-f026-4469-980e-52d6dfff811c)
 
 #### Update Item
 - Update Item to SQL Accounting Database
-- Call API endpoint => baseUrl/api/Items/UpdateItem/{itemCode} with object attach to request body
+- Call API endpoint => {{baseUrl}}/api/Items/UpdateItem/{itemCode} with object attach to request body
 - Make sure the StockGroup already existed in SQL Accounting
   ```
   {
@@ -165,23 +166,23 @@ Result:
     ]
   }
   ```
-  ![image](https://github.com/user-attachments/assets/d8b6a3cd-e593-4b65-b488-9c988ef08e7c)
+  <img width="1054" height="559" alt="image" src="https://github.com/user-attachments/assets/6b336f89-51e0-4cc0-a9a6-f399a7f80c0f" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/89de4fcb-7069-41d1-9ac3-2733b9aca289)
 
 #### Get Item by ItemCode
 - Get Item by ItemCode from SQL Accounting Database
-- Call API endpoint => baseUrl/api/Items/GetItemByItemCode/{itemCode}
-  ![image](https://github.com/user-attachments/assets/f96b4871-13b9-4e8e-bff8-03ebf33d1c2f)
+- Call API endpoint => {{baseUrl}}/api/Items/GetItemByItemCode/{itemCode}
+  <img width="879" height="347" alt="image" src="https://github.com/user-attachments/assets/d607d0c6-075b-42e7-ab54-450b290238de" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/a88de8bc-8999-4a8f-a352-b12da4e196a7)
 
 #### Delete Item
 - Delete Item from SQL Accounting Database
-- Call API endpoint => baseUrl/api/Items/DeleteItem/{itemCode}
-  <![image](https://github.com/user-attachments/assets/6abe0f53-fb21-4a6c-833e-12463a75b671)
+- Call API endpoint => {{baseUrl}}/api/Items/DeleteItem/{itemCode}
+  <img width="924" height="351" alt="image" src="https://github.com/user-attachments/assets/dce1d61d-ac39-4971-918e-5c144e42c288" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/63f488dd-e81c-49c0-9be5-467454e753bb)
@@ -189,8 +190,8 @@ Result:
 ### SalesInvoice
 #### Get All SalesInvoices
 - Get all SalesInvoices from SQL Accounting Database
-- Call API endpoint => baseUrl/api/SalesInvoices/GetAllSalesInvoices
-  ![image](https://github.com/user-attachments/assets/ee203691-9d02-4dd4-a0a5-dfd2b3bc061c)
+- Call API endpoint => {{baseUrl}}/api/SalesInvoices/GetAllSalesInvoices
+  <img width="949" height="334" alt="image" src="https://github.com/user-attachments/assets/616ae430-f47b-4a9e-b3c9-c337e4a483be" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/4d9f7e49-7852-43cb-9a7f-f59c91e14391)
@@ -198,7 +199,7 @@ Result:
 
 #### Create SalesInvoice
 - Create SalesInvoice in SQL Accounting Database
-- Call API endpoint => baseUrl/api/SalesInvoices/CreateSalesInvoice with object attach to request body
+- Call API endpoint => {{baseUrl}}/api/SalesInvoices/CreateSalesInvoice with object attach to request body
 - Make sure the customer existed in SQL Accounting Database
   ```
   {
@@ -222,7 +223,7 @@ Result:
     ]
   }
   ```
-  ![image](https://github.com/user-attachments/assets/780a49d4-5187-49b5-b9b4-b482723873c3)
+  <img width="1036" height="698" alt="image" src="https://github.com/user-attachments/assets/6d369ecd-37e7-4874-b597-acab05da9c70" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/84a1fd6c-6cb2-40d7-ae70-c7c2c6a8c386)
@@ -230,7 +231,7 @@ Result:
 
 #### Update SalesInvoice
 - Update SalesInvoice in SQL Accounting Database
-- Call API endpoint => baseUrl/api/SalesInvoices/UpdateSalesInvoice/{invoiceNo} with object attach to request body
+- Call API endpoint => {{baseUrl}}/api/SalesInvoices/UpdateSalesInvoice/{invoiceNo} with object attach to request body
 - Make sure the customer existed in SQL Accounting Database
   ```
   {
@@ -253,7 +254,7 @@ Result:
     ]
   }
   ```
-  ![image](https://github.com/user-attachments/assets/1d5bf782-5fa3-4758-a8b4-9fab62968f8b)
+  <img width="1140" height="678" alt="image" src="https://github.com/user-attachments/assets/d69ede57-2d69-4167-9fc8-cdd32aacce3d" />
 
 - Result
   ![image](https://github.com/user-attachments/assets/1aaa6cfc-da41-409c-8543-82842bef1a24)
@@ -261,8 +262,8 @@ Result:
 
 #### Get SalesInvoice by InvoiceNo
 - Get SalesInvoice by InvoiceNo from SQL Accounting Database
-- Call API endpoint => baseUrl/api/SalesInvoices/GetSalesInvoiceByDocNo/{invoiceNo}
-  ![image](https://github.com/user-attachments/assets/3a4432f5-b04c-4cb9-befd-1d173c85b7e6)
+- Call API endpoint => {{baseUrl}}/api/SalesInvoices/GetSalesInvoiceByDocNo/{invoiceNo}
+  <img width="882" height="367" alt="image" src="https://github.com/user-attachments/assets/b0b54441-3de7-4eb7-85d7-d5cefd5a307f" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/5060c8c1-7f8e-4864-a79b-2e84bdc68107)
@@ -270,8 +271,8 @@ Result:
 
 #### Delete SalesInvoice
 - Delete SalesInvoice in SQL Accounting Database
-- Call API endpoint => baseUrl/api/SalesInvoices/DeleteSalesInvoice/{invoiceNo}
-  ![image](https://github.com/user-attachments/assets/e01da130-45ad-455e-b5d5-302797984507)
+- Call API endpoint => {{baseUrl}}/api/SalesInvoices/DeleteSalesInvoice/{invoiceNo}
+  <img width="904" height="336" alt="image" src="https://github.com/user-attachments/assets/d60a1b08-487e-4824-8883-8db5ed754f62" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/c187a913-24dc-4275-82d8-f8cd82d8590e)

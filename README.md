@@ -276,3 +276,53 @@ Result:
 
 - Result:
   ![image](https://github.com/user-attachments/assets/c187a913-24dc-4275-82d8-f8cd82d8590e)
+
+
+### CustomerPayment
+#### Get All CustomerPayments
+- Get all CustomerPayments from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CustomerPayments/GetAllCustomerPayments
+  <img width="810" height="256" alt="image" src="https://github.com/user-attachments/assets/917a0a20-cfb3-4cff-837b-16a9ebed8a65" />
+
+- Result:
+  <img width="818" height="598" alt="image" src="https://github.com/user-attachments/assets/41bbc65c-60ad-444e-a900-068bcf0bcc7a" />
+
+#### Create CustomerPayment
+- Create CustomerPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CustomerPayments/CreateCustomerPayment with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "code": "string",
+    "docdate": "2025-08-22",
+    "paymentmethodname": "string",
+    "docamt": 0,
+    "knockoffivno": "string",
+    "knockoffamt": 0
+  }
+  ```
+  <img width="821" height="320" alt="image" src="https://github.com/user-attachments/assets/e9064277-917d-4cd1-89d8-fcaafd39bc8c" />
+
+- Result:
+  <img width="810" height="325" alt="image" src="https://github.com/user-attachments/assets/bb4ce3e9-b2a6-4641-bfdd-73166dfbbd71" />
+
+#### Update CustomerPayment
+- Update CustomerPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CustomerPayments/UpdateCustomerPayment/{docNo} with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "code": "string",
+    "docdate": "2025-08-22",
+    "paymentmethodname": "string",
+    "docamt": 0,
+    "knockoffivno": "string",
+    "knockoffamt": 0
+  }
+  ```
+  
+
+- Result
+

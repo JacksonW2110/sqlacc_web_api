@@ -139,7 +139,7 @@ Result:
   ]
 }
 ```
-  <img width="1048" height="558" alt="image" src="https://github.com/user-attachments/assets/9a82b795-70d4-4a04-bc5a-a431570f09a5" />
+  <img width="821" height="553" alt="image" src="https://github.com/user-attachments/assets/6c433a71-1114-411a-af59-52639750ca66" />
 
 - Result:
   ![image](https://github.com/user-attachments/assets/4aa8ba7b-f026-4469-980e-52d6dfff811c)

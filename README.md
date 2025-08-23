@@ -278,6 +278,103 @@ Result:
   ![image](https://github.com/user-attachments/assets/c187a913-24dc-4275-82d8-f8cd82d8590e)
 
 
+### CashSales
+#### Get All CashSales
+- Get all CashSales from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CashSales/GetAllCashSales
+  <img width="1605" height="420" alt="image" src="https://github.com/user-attachments/assets/08c9624d-ca12-413c-a974-00e620386cb2" />
+
+
+- Result:
+  <img width="1593" height="935" alt="image" src="https://github.com/user-attachments/assets/5bcc8f69-3c6e-4a69-beb6-a67d3b0f2524" />
+  <img width="1639" height="948" alt="image" src="https://github.com/user-attachments/assets/ac455298-2e4d-410b-bd16-217f45bf0ce4" />
+
+#### Create CashSales
+- Create CashSales in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CashSales/CreateCashSales with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "docdate": "2025-08-23",
+    "code": "string",
+    "project": "string",
+    "docamt": 0,
+    "addCashSalesDetailRequestDtos": [
+      {
+        "itemcode": "string",
+        "description": "string",
+        "qty": 0,
+        "uom": "string",
+        "unitprice": 0,
+        "disc": "string",
+        "tax": "string",
+        "taxrate": "string",
+        "taxamt": 0,
+        "taxinclusive": true
+      }
+    ]
+  }
+  ```
+  <img width="1588" height="1183" alt="image" src="https://github.com/user-attachments/assets/8e8ecb22-87f2-4c18-bd3f-be613b3bb824" />
+
+- Result:
+  <img width="1593" height="1032" alt="image" src="https://github.com/user-attachments/assets/54110eca-6549-431a-89c0-469e1f26cc11" />
+  <img width="1570" height="1079" alt="image" src="https://github.com/user-attachments/assets/bd9249e2-f226-443a-bd57-9271b850f89c" />
+
+#### Update CashSales
+- Update CashSales in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CashSales/UpdateCashSales/{docNo} with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docdate": "2025-08-23",
+    "code": "string",
+    "project": "string",
+    "docamt": 0,
+    "updateCashSalesDetailRequestDtos": [
+      {
+        "itemcode": "string",
+        "description": "string",
+        "qty": 0,
+        "uom": "string",
+        "unitprice": 0,
+        "disc": "string",
+        "tax": "string",
+        "taxrate": "string",
+        "taxamt": 0,
+        "taxinclusive": true
+      }
+    ]
+  }
+  ```
+  <img width="1566" height="1178" alt="image" src="https://github.com/user-attachments/assets/c237ec1c-fdd1-44b0-bfe0-5d463954dd9b" />
+
+- Result
+  <img width="1568" height="932" alt="image" src="https://github.com/user-attachments/assets/f58e9c6b-5b92-451c-befa-68a1be981971" />
+  <img width="1594" height="922" alt="image" src="https://github.com/user-attachments/assets/d5349e19-1515-491f-b133-0ece37c1d055" />
+  <img width="1588" height="931" alt="image" src="https://github.com/user-attachments/assets/690bc549-e31f-460a-b079-0767fa71ed85" />
+
+#### Get CashSales by DocNo
+- Get CashSales by DocNo from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CashSales/GetCashSalesByDocNo/{docNo}
+  <img width="1613" height="469" alt="image" src="https://github.com/user-attachments/assets/95ce6603-196e-4954-bce3-828f08071c68" />
+
+- Result:
+  <img width="1564" height="918" alt="image" src="https://github.com/user-attachments/assets/d21b2f4d-67fb-4ace-845e-05e6c7c5a779" />
+  <img width="1620" height="932" alt="image" src="https://github.com/user-attachments/assets/06655c22-dadb-416d-821b-7b6bc547dcd8" />
+  <img width="1583" height="898" alt="image" src="https://github.com/user-attachments/assets/79318b05-b55b-431c-8723-2c33f7975bef" />
+
+
+#### Delete CashSales
+- Delete CashSales in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CashSales/DeleteCashSales/{docNo}
+  <img width="1609" height="533" alt="image" src="https://github.com/user-attachments/assets/1a9bde0f-149a-49ea-864d-0a73c825a568" />
+
+- Result:
+  <img width="1625" height="438" alt="image" src="https://github.com/user-attachments/assets/c3836d13-dba3-46c6-94b9-3eceb4e067a8" />
+
+  
 ### CustomerPayment
 #### Get All CustomerPayments
 - Get all CustomerPayments from SQL Accounting Database

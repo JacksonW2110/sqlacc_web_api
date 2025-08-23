@@ -322,7 +322,18 @@ Result:
     "knockoffamt": 0
   }
   ```
-  
+  <img width="1602" height="640" alt="image" src="https://github.com/user-attachments/assets/5b96c5ee-6dea-45aa-9984-544f9cb05985" />
 
 - Result
+  <img width="1635" height="664" alt="image" src="https://github.com/user-attachments/assets/d211c1eb-bc65-423a-b01a-5e3fc92dcb30" />
+
+#### Delete CustomerPayment
+- Delete CustomerPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CustomerPayments/DeleteCustomerPayment/{docNo}
+  <img width="1604" height="519" alt="image" src="https://github.com/user-attachments/assets/745285fe-dc30-4961-be3f-a653e4bdaf03" />
+
+- Result:
+  <img width="1606" height="379" alt="image" src="https://github.com/user-attachments/assets/bf03fbe7-db73-4251-8064-11b8b979a93f" />
+
+
 

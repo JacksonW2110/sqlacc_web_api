@@ -433,4 +433,98 @@ Result:
   <img width="1606" height="379" alt="image" src="https://github.com/user-attachments/assets/bf03fbe7-db73-4251-8064-11b8b979a93f" />
 
 
+### Supplier
+#### Get All Suppliers
+- Get All Suppliers from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/Suppliers/GetAllSuppliers
+  <img width="1606" height="495" alt="image" src="https://github.com/user-attachments/assets/bfdf75d1-b71a-4b64-a7e7-62915958b8f7" />
+
+- Result:
+  <img width="1601" height="951" alt="image" src="https://github.com/user-attachments/assets/b93cd7b0-9adb-4dea-920d-2afc7fdfac04" />
+  <img width="1610" height="954" alt="image" src="https://github.com/user-attachments/assets/26acb815-3684-4ef0-9812-e1c1e1d04cb9" />
+
+#### Add Supplier
+- Add Supplier to SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/Suppliers/AddSupplier with the object attach to request body
+  ```
+  {
+    "code": "string",
+    "controlaccount": "string",
+    "companyname": "string",
+    "area": "string",
+    "agent": "string",
+    "creditterm": "string",
+    "creditlimit": 0,
+    "overduelimit": 0,
+    "currencycode": "string",
+    "outstanding": 0,
+    "addSupplierBranchRequestDtos": [
+      {
+        "code": "string",
+        "branchname": "string",
+        "addresS1": "string",
+        "addresS2": "string",
+        "attention": "string",
+        "phonE1": "string",
+        "email": "string"
+      }
+    ]
+  }
+  ```
+  <img width="1590" height="1183" alt="image" src="https://github.com/user-attachments/assets/f28ab304-f127-40cc-afed-7f49d5d1257f" />
+
+- Result:
+  <img width="1592" height="852" alt="image" src="https://github.com/user-attachments/assets/f86b98b5-6482-4154-889b-369586a08767" />
+  <img width="1582" height="836" alt="image" src="https://github.com/user-attachments/assets/7500fcb3-43a5-4b26-959c-7390378f736f" />
+
+### Update Supplier
+- Update Supplier to SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/Suppliers/UpdateSupplier/{supplierCode} with the object attach to request body
+  ```
+  {
+    "code": "string",
+    "controlaccount": "string",
+    "companyname": "string",
+    "area": "string",
+    "agent": "string",
+    "creditterm": "string",
+    "creditlimit": 0,
+    "overduelimit": 0,
+    "currencycode": "string",
+    "outstanding": 0,
+    "updateSupplierBranchRequestDtos": [
+      {
+        "code": "string",
+        "branchname": "string",
+        "addresS1": "string",
+        "addresS2": "string",
+        "attention": "string",
+        "phonE1": "string",
+        "email": "string"
+      }
+    ]
+  }
+  ```
+  <img width="1581" height="1177" alt="image" src="https://github.com/user-attachments/assets/1a087fcd-847a-4871-ad1d-8ba289054ebc" />
+
+- Result:
+  <img width="1570" height="1065" alt="image" src="https://github.com/user-attachments/assets/aa115742-8173-47ab-af24-d9601b94aba0" />
+  <img width="1589" height="1068" alt="image" src="https://github.com/user-attachments/assets/df698aa9-ba67-4271-b692-dbf02bacf6e7" />
+
+#### Get Supplier By Code
+- Get Supplier from SQL Accounting Database by Code
+- Call API endpoint => {{baseUrl}}/api/Suppliers/GetSupplierrByCode/{supplierCode}
+  <img width="1609" height="439" alt="image" src="https://github.com/user-attachments/assets/9fca4de4-bae0-485a-a873-2046225ad892" />
+
+- Result:
+  <img width="1577" height="953" alt="image" src="https://github.com/user-attachments/assets/3d2e2c18-07be-45ea-8ad6-c77eb6d696d4" />
+
+
+#### Delete Supplier
+- Delete Supplier from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/Suppliers/DeleteSupplier/{supplierCode}
+  <img width="1590" height="506" alt="image" src="https://github.com/user-attachments/assets/9794e916-1397-483e-9cfe-a0596a7811d5" />
+
+- Result:
+  <img width="1607" height="452" alt="image" src="https://github.com/user-attachments/assets/f56b8a0b-326d-492b-b736-e36a3841fb60" />
 

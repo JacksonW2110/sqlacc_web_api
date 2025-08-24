@@ -528,3 +528,98 @@ Result:
 - Result:
   <img width="1607" height="452" alt="image" src="https://github.com/user-attachments/assets/f56b8a0b-326d-492b-b736-e36a3841fb60" />
 
+
+### PurchaseInvoice
+#### Get All PurchaseInvoices
+- Get all PurchaseInvoices from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/PurchaseInvoices/GetAllPurchaseInvoices
+  <img width="1600" height="388" alt="image" src="https://github.com/user-attachments/assets/348ee2b8-8812-4425-bbbf-bff577abf67b" />
+
+- Result:
+  <img width="1595" height="897" alt="image" src="https://github.com/user-attachments/assets/e7c2036e-b777-48d5-8501-f4df8335400e" />
+  <img width="1612" height="959" alt="image" src="https://github.com/user-attachments/assets/5b153ec0-bb87-4157-92f9-ba73f278a41f" />
+
+
+#### Create PurchaseInvoice
+- Create PurchaseInvoice in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/PurchaseInvoices/CreatePurchaseInvoice with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "docdate": "2025-08-24",
+    "code": "string",
+    "project": "string",
+    "docamt": 0,
+    "addPurchaseInvoiceDetailRequestDtos": [
+      {
+        "itemcode": "string",
+        "description": "string",
+        "qty": 0,
+        "uom": "string",
+        "unitprice": 0,
+        "disc": "string",
+        "tax": "string",
+        "taxrate": "string",
+        "taxamt": 0,
+        "taxinclusive": true
+      }
+    ]
+  }
+  ```
+  <img width="1609" height="1200" alt="image" src="https://github.com/user-attachments/assets/91117beb-e529-4708-bfe4-5e1463ccc43a" />
+  
+- Result:
+  <img width="1601" height="1059" alt="image" src="https://github.com/user-attachments/assets/8227a76e-b69e-439a-aea7-6685852db82e" />
+  <img width="1604" height="1071" alt="image" src="https://github.com/user-attachments/assets/bf36c61e-4d86-4e4f-b461-f2101b0eb27d" />
+
+#### Update PurchaseInvoice
+- Update PurchaseInvoice in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/PurchaseInvoices/UpdatePurchaseInvoice/{invoiceNo} with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docdate": "2025-08-24",
+    "code": "string",
+    "project": "string",
+    "docamt": 0,
+    "updatePurchaseInvoiceDetailRequestDtos": [
+      {
+        "itemcode": "string",
+        "description": "string",
+        "qty": 0,
+        "uom": "string",
+        "unitprice": 0,
+        "disc": "string",
+        "tax": "string",
+        "taxrate": "string",
+        "taxamt": 0,
+        "taxinclusive": true
+      }
+    ]
+  }
+  ```
+  <img width="1605" height="1321" alt="image" src="https://github.com/user-attachments/assets/d83b8972-4a54-4dab-b687-8b03bb0c8c7e" />
+
+- Result
+  <img width="1577" height="998" alt="image" src="https://github.com/user-attachments/assets/c33c3c57-d525-47a0-bfd0-755b6523d691" />
+  <img width="1584" height="1000" alt="image" src="https://github.com/user-attachments/assets/5f6d1ab3-21f8-4b95-b526-6a12fecf2c10" />
+
+#### Get PurchaseInvoice by InvoiceNo
+- Get PurchaseInvoice by InvoiceNo from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/PurchaseInvoices/GetPurchaseInvoiceByDocNo/{invoiceNo}
+  <img width="1595" height="497" alt="image" src="https://github.com/user-attachments/assets/4a370cc7-f9fb-4912-8b13-e79ba2151293" />
+
+- Result:
+  <img width="1606" height="1044" alt="image" src="https://github.com/user-attachments/assets/f6de8a16-0bfb-4838-91de-38b5fcd512b2" />
+  <img width="1602" height="1036" alt="image" src="https://github.com/user-attachments/assets/3478c628-5b23-49ed-93ee-7d9684740c34" />
+
+#### Delete PurchaseInvoice
+- Delete PurchaseInvoice in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/PurchaseInvoices/DeletePurchaseInvoice/{invoiceNo}
+  <img width="1591" height="521" alt="image" src="https://github.com/user-attachments/assets/c2ea5b93-9ca9-409a-8513-e39d4e028fac" />
+
+- Result:
+  <img width="1608" height="419" alt="image" src="https://github.com/user-attachments/assets/757a00bc-ecc8-4c6b-b57f-4e53b8bec599" />
+
+

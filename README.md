@@ -424,6 +424,15 @@ Result:
 - Result
   <img width="1635" height="664" alt="image" src="https://github.com/user-attachments/assets/d211c1eb-bc65-423a-b01a-5e3fc92dcb30" />
 
+#### Get CustomerPayment by DocNo
+- Get CustomerPayment by DocNo from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/CustomerPayments/GetCustomerPaymentByDocNo/{docNo}
+  <img width="1588" height="540" alt="image" src="https://github.com/user-attachments/assets/472d5065-cc98-4990-8ef9-ed8384817256" />
+
+- Result:
+  <img width="1593" height="659" alt="image" src="https://github.com/user-attachments/assets/e4fce78d-74ad-48ab-8935-caf5145d6407" />
+
+  
 #### Delete CustomerPayment
 - Delete CustomerPayment in SQL Accounting Database
 - Call API endpoint => {{baseUrl}}/api/CustomerPayments/DeleteCustomerPayment/{docNo}
@@ -622,4 +631,70 @@ Result:
 - Result:
   <img width="1608" height="419" alt="image" src="https://github.com/user-attachments/assets/757a00bc-ecc8-4c6b-b57f-4e53b8bec599" />
 
+
+### SupplierPayment
+#### Get All SupplierPayments
+- Get all SupplierPayments from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/SupplierPayments/GetAllSupplierPayments
+  <img width="1621" height="515" alt="image" src="https://github.com/user-attachments/assets/8d6c9188-07ff-4748-8a5e-d86d96ff66a2" />
+
+- Result:
+  <img width="1606" height="1201" alt="image" src="https://github.com/user-attachments/assets/c4810610-fb20-4935-98c7-476739c666f1" />
+
+#### Create SupplierPayment
+- Create SupplierPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/SupplierPayments/AddSupplierPayment with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "code": "string",
+    "docdate": "2025-08-24",
+    "paymentmethodname": "string",
+    "docamt": 0,
+    "knockoffivno": "string",
+    "knockoffamt": 0
+  }
+  ```
+  <img width="1586" height="716" alt="image" src="https://github.com/user-attachments/assets/ec4925b3-5cda-4669-9cf8-f149c58145ff" />
+
+- Result:
+  <img width="1638" height="685" alt="image" src="https://github.com/user-attachments/assets/f7f6401b-424a-458e-81cc-bcc0492e062e" />
+
+
+#### Update SupplierPayment
+- Update SupplierPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/SupplierPayments/UpdateSupplierPayment/{docNo} with object attach to request body
+- Make sure the customer existed in SQL Accounting Database
+  ```
+  {
+    "docno": "string",
+    "code": "string",
+    "docdate": "2025-08-24",
+    "paymentmethodname": "string",
+    "docamt": 0,
+    "knockoffivno": "string",
+    "knockoffamt": 0
+  }
+  ```
+  <img width="1598" height="630" alt="image" src="https://github.com/user-attachments/assets/723e4b4b-6af9-4d79-acc7-e1b683740935" />
+
+- Result
+  <img width="1588" height="665" alt="image" src="https://github.com/user-attachments/assets/15665977-bc02-469a-978e-0dc28baad018" />
+
+#### Get SupplierPayments by DocNo
+- Get SupplierPayments by DocNo from SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/SupplierPayments/GetSupplierPaymentByDocNo/{docNo}
+  <img width="1602" height="558" alt="image" src="https://github.com/user-attachments/assets/eb1878ad-886c-4885-883f-9b9e2d58c32b" />
+  
+- Result:
+  <img width="1595" height="652" alt="image" src="https://github.com/user-attachments/assets/8ff06097-5e19-482b-be2b-202419c722dc" />
+
+#### Delete SupplierPayment
+- Delete SupplierPayment in SQL Accounting Database
+- Call API endpoint => {{baseUrl}}/api/SupplierPayments/DeleteSupplierPayment/{docNo}
+  <img width="1591" height="518" alt="image" src="https://github.com/user-attachments/assets/d2504b3e-3794-4d36-a386-ec26b5f4077b" />
+
+- Result:
+  <img width="1614" height="425" alt="image" src="https://github.com/user-attachments/assets/24ff2ede-bba7-4c2b-8462-f561b8ea937e" />
 
